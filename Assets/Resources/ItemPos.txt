@@ -1,0 +1,827 @@
+{
+	"weaponCategories": [{
+			"id": "Fist",
+			"reach": 0.2,
+			"twoHanded": false,
+			"dualWield": true,
+			"hitVectors": [{
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 25,
+				"y": 5
+			}, {
+				"x": 8,
+				"y": 35
+			}],
+			"weapons": [{
+				"EnglishName": "Unarmed"
+			}, {
+				"EnglishName": "Skull Smasher",
+				"rightPos": {"x":0.022,"y":0.0018 },
+				"rightRotZ": -2.45,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.022,"y":0.0018},
+				"leftRotZ": -6.857,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+
+			}, {
+				"EnglishName": "Caws of Dead'ric",
+				"rightPos": {"x":0.183,"y":0.006 },
+				"rightRotZ": -2.45,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.183,"y":0.006 },
+				"leftRotZ": -6.857,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Hatesuwo",
+				"rightPos": {"x":0.088,"y":0.012 },
+				"rightRotZ": -2.45,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.088,"y":0.012 },
+				"leftRotZ": -6.857,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Neroshinemu",
+				"rightPos": {"x":0.103,"y":0.017 },
+				"rightRotZ": -2.45,
+				"rightLocalScale" : {"x":0.2,"y":0.2},
+				"leftPos": {"x":0.103,"y":0.017 },
+				"leftRotZ": -6.857,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Onepunch Fists",
+				"rightPos": {"x":-0.083,"y":0.035 },
+				"rightRotZ": -2.45,
+				"rightLocalScale" : {"x":0.2,"y":0.2},
+				"leftPos": {"x":-0.083,"y":0.035 },
+				"leftRotZ": -6.857,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Iron Gloves",
+				"unlockLevel": 1,
+				"rightPos": {"x":0.0754,"y":0.021 },
+				"rightRotZ": -2.45,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.0754,"y":0.021 },
+				"leftRotZ": -6.857,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Metal Fists",
+				"unlockLevel": 6,
+				"rightPos": {"x":0.308,"y":-0.011 },
+				"rightRotZ": -2.45,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.308,"y":-0.011 },
+				"leftRotZ": -6.857,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}]
+		},
+
+		{
+			"id": "Dagger",
+			"reach": 0.3,
+			"twoHanded": false,
+			"dualWield": true,
+			"hitVectors": [{
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 25,
+				"y": 5
+			}, {
+				"x": 25,
+				"y": 5
+			}, {
+				"x": 8,
+				"y": 35
+			}],
+			"weapons": [{
+				"EnglishName": "Balgruuf",
+				"rightPos": {"x":0.155,"y":0.008 },
+				"rightRotZ": -98.34,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.155,"y":0.008 },
+				"leftRotZ": -90.498,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Blessed Iron Dagger",
+				"rightPos": {"x":0.185,"y":0.004 },
+				"rightRotZ": -90.846,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.185,"y":0.004 },
+				"leftRotZ": -90.498,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Bloodscythe",
+				"rightPos": {"x":0.178,"y":-0.002 },
+				"rightRotZ": -90.846,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.178,"y":-0.002 },
+				"leftRotZ": -90.498,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Bloodthorn",
+				"rightPos": {"x":0.21,"y":-0.001 },
+				"rightRotZ": -90.846,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.21,"y":-0.001 },
+				"leftRotZ": -90.498,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+
+			}, {
+				"EnglishName": "Dagger of Sacrifice",
+				"rightPos": {"x":0.19,"y":-0.006},
+				"rightRotZ": -90.846,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.19,"y":-0.006 },
+				"leftRotZ": -90.498,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Pencil",
+				"unlockLevel": 2,
+				"rightPos": {"x":0.235,"y":-0.003 },
+				"rightRotZ": -90.846,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.235,"y":-0.003 },
+				"leftRotZ": -90.498,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Ceremonial Dagger",
+				"unlockLevel": 3,
+				"rightPos": {"x":0.174,"y":0.017 },
+				"rightRotZ": -90.846,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.174,"y":0.017 },
+				"leftRotZ": -90.498,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Alessandra",
+				"unlockLevel": 13,
+				"rightPos": {"x":0.178,"y":0.008 },
+				"rightRotZ": -90.846,
+				"rightLocalScale" : {"x":0.2,"y":0.2 },
+				"leftPos": {"x":0.178,"y":0.008 },
+				"leftRotZ": -90.498,
+				"leftLocalScale" : {"x":0.2,"y":0.2 }
+			}]
+		},
+		{
+			"id": "Axe",
+			"reach": 0.8,
+			"twoHanded": true,
+			"dualWield": false,
+			"hitVectors": [{
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 8,
+				"y": 35
+			}, {
+				"x": 5,
+				"y": -20
+			}],
+			"weapons": [{
+				"EnglishName": "Nord War Axe",
+				"Pos": {"x":0.378,"y":-0.008 },
+				"RotZ": -90,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Daed'ric Axe of Storms",
+				"Pos": {"x":0.349,"y":-0.037 },
+				"RotZ": -90,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+			}, {
+				"EnglishName": "Guillotine",
+				"Pos": {"x":0.321,"y":-0.129 },
+				"RotZ": -90,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "The Mangler",
+				"Pos": {"x":0.362,"y":0.013 },
+				"RotZ": -90,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Stone Cleaver",
+				"Pos": {"x":0.347,"y":0.033 },
+				"RotZ": -90,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "The Butcher's Cleaver",
+				"unlockLevel": 4,
+				"Pos": {"x":0.462,"y":-0.073 },
+				"RotZ": -90,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Ragnarok",
+				"unlockLevel": 11,
+				"Pos": {"x":0.422,"y":-0.005},
+				"RotZ": -90,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Messerschmidt's Reaver",
+				"unlockLevel": 12,
+				"Pos": {"x":0.507,"y":0.011 },
+				"RotZ": -90,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Sharp Beak",
+				"unlockLevel": 14,
+				"Pos": {"x":0.468,"y":0.021 },
+				"RotZ": -90,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}]
+		},
+		{
+			"id": "Spear",
+			"reach": 0.8,
+			"twoHanded": true,
+			"dualWield": false,
+			"hitVectors": [{
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 8,
+				"y": 35
+			}],
+			"weapons": [{
+				"EnglishName": "Hyperion Spear",
+				"Pos": {"x":0.14,"y":-0.04 },
+				"RotZ": -93.02,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Mancatcher",
+				"Pos": {"x":0.14,"y":-0.04 },
+				"RotZ": -93.02,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Peace Keeper",
+				"Pos": {"x":0.14,"y":-0.04 },
+				"RotZ": -93.02,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Viperfork",
+				"Pos": {"x":0.14,"y":-0.04 },
+				"RotZ": -93.02,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Kelpie Snare",
+				"Pos": {"x":0.14,"y":-0.04 },
+				"RotZ": -93.02,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Phoenix",
+				"unlockLevel": 7,
+				"Pos": {"x":0.14,"y":-0.04 },
+				"RotZ": -93.02,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Mic",
+				"unlockLevel": 10,
+				"Pos": {"x":0.14,"y":-0.04 },
+				"RotZ": -93.02,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}]
+		},
+		{
+			"id": "Sword1h",
+			"reach": 0.5,
+			"twoHanded": true,
+			"dualWield": false,
+			"hitVectors": [{
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 8,
+				"y": 35
+			}],
+			"weapons": [{
+				"EnglishName": "The Atlantean",
+				"Pos": {"x":0.297,"y":0.039 },
+				"RotZ": -86.21,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Cloudcrack",
+				"Pos": {"x":0.366,"y":0.021 },
+				"RotZ": -86.21,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Azurewrath",
+				"Pos": {"x":0.344,"y":0.018 },
+				"RotZ": -86.21,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Todesfaelle Flamme",
+				"Pos": {"x":0.392,"y":0.038 },
+				"RotZ": -86.21,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "God Butcher",
+				"Pos": {"x":0.334,"y":0.021 },
+				"RotZ": -86.21,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Fulminator",
+				"Pos": {"x":0.374,"y":-0.008 },
+				"RotZ": -86.21,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Skycutter",
+				"unlockLevel": 5,
+				"Pos": {"x":0.339,"y":0.021 },
+				"RotZ": -86.21,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Crainte Vomir",
+				"unlockLevel": 9,
+				"Pos": {"x":0.423,"y":0.031 },
+				"RotZ": -86.21,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}]
+		},
+		{
+			"id": "Sword2h",
+			"reach": 0.8,
+			"twoHanded": true,
+			"dualWield": false,
+			"hitVectors": [{
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 8,
+				"y": 35
+			}, {
+				"x": 5,
+				"y": -20
+			}],
+			"weapons": [{
+				"EnglishName": "Quinquennial Sword",
+				"Pos": {"x":0.6,"y":-0.041 },
+				"RotZ": -88.45,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Resplendent Ancient",
+				"Pos": {"x":0.523,"y":-0.001},
+				"RotZ": -88.45,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Grand Master Gladius",
+				"Pos": {"x":0.533,"y":-0.002 },
+				"RotZ": -88.45,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Griswold's Perfection",
+				"Pos": {"x":0.521,"y":-0.037 },
+				"RotZ": -88.45,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Sovereign Tsunami Blade",
+				"Pos": {"x":0.588,"y":-0.034},
+				"RotZ": -88.45,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Born's Furious Wrath",
+				"unlockLevel": 8,
+				"Pos": {"x":0.576,"y":0.001 },
+				"RotZ": -88.45,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Deathwish",
+				"unlockLevel": 15,
+				"Pos": {"x":0.546,"y":0.004 },
+				"RotZ": -88.45,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}, {
+				"EnglishName": "Hanzo Spectrum",
+				"unlockLevel": 16,
+				"Pos": {"x":0.628,"y":-0.01 },
+				"RotZ": -88.45,
+				"LocalScale" : {"x":0.2,"y":0.2 }
+			}]
+		}
+	],
+	"hats": [{
+		"id": "hat0",
+		"EnglishName": "Bald",
+		"Pos": {"x":0,"y":0 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+		
+	},{
+		"id": "wolf",
+		"EnglishName": "Wolf Man",
+		"Pos": {"x":0,"y":0 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	}
+	,{
+		"id": "thor",
+		"EnglishName": "Thunder God",
+		"Pos": {"x":0,"y":0  },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	}
+	,{
+		"id": "ironman",
+		"EnglishName": "Iron Robot",
+		"Pos": {"x":0,"y":0 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	}
+	,{
+		"id": "blackpanther",
+		"EnglishName": "Demon Panther",
+		"Pos": {"x":0,"y":0 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	}
+	,{
+		"id": "admiral",
+		"EnglishName": "Admiral",
+		"Pos": {"x":0.093,"y":0.259 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "americangothic",
+		"EnglishName": "American Gothic",
+		"Pos": {"x":0.064,"y":0.198 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "artist",
+		"EnglishName": "L'Artiste",
+		"Pos": {"x":-0.024,"y":0.083 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "mrofficer",
+		"EnglishName": "Mr. Officer",
+		"Pos": {"x":0.021,"y":0.069 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "maleficent",
+		"EnglishName": "Witch",
+		"Pos": {"x":0.003,"y":0.135 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.132,"y":0.132 }
+	},{
+		"id": "chief",
+		"EnglishName": "The Chief",
+		"Pos": {"x":-0.096,"y":0.067 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "chinese",
+		"EnglishName": "Qing Guanmao",
+		"Pos": {"x":-0.05,"y":-0.036},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "drogon",
+		"EnglishName": "Drogon",
+		"Pos": {"x":-0.042,"y":-0.016},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "dumbo",
+		"EnglishName": "Dumbo",
+		"Pos": {"x":-0.002,"y":-0.061 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "alex",
+		"EnglishName": "Alex",
+		"Pos": {"x":0,"y":0 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "fez",
+		"EnglishName": "Fez",
+		"Pos": {"x":-0.045,"y":0.186 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "fullmetaljacket",
+		"EnglishName": "Full Metal Jacket",
+		"Pos": {"x":0.018,"y":0.021 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "gandalf",
+		"EnglishName": "Gandalf",
+		"Pos": {"x":0,"y":0.122},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "gasmask",
+		"EnglishName": "Gas Mask",
+		"Pos": {"x":0.0375,"y":-0.087 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "goku",
+		"EnglishName": "Kamehameha!",
+		"Pos": {"x":-0.0379,"y":0.0761 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "walterwhite",
+		"EnglishName": "Mr. White",
+		"Pos": {"x":-0.0068,"y":0.0263 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "robbywood",
+		"EnglishName": "Robby Wood",
+		"Pos": {"x":-0.0193,"y":0.0736 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "kendo",
+		"EnglishName": "Kendo",
+		"Pos": {"x":-0.0676,"y":-0.0964 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "catwoman",
+		"EnglishName": "Cat Woman",
+		"Pos": {"x":0.0183,"y":0.0282 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.135,"y":0.135 }
+	},{
+		"id": "korean",
+		"EnglishName": "Gat",
+		"Pos": {"x":-0.0309,"y":-0.0309},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.135,"y":0.135 }
+	},{
+		"id": "medusa",
+		"EnglishName": "Medusa",
+		"Pos": {"x":-0.015,"y":0.126 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "lacucaracha",
+		"EnglishName": "Sombrero",
+		"Pos": {"x":0.036,"y":0.12},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "machinist",
+		"EnglishName": "Machinist",
+		"Pos": {"x":0.0314,"y":0.0698 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "marchingband",
+		"EnglishName": "Marching Band",
+		"Pos": {"x":0.0314,"y":0.0698 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "naruto",
+		"EnglishName": "Naruto",
+		"Pos": {"x":-0.1889,"y":-0.0799 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "ninja",
+		"EnglishName": "Ninja",
+		"Pos": {"x":-0.0248,"y":-0.0588 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "oktoberfest",
+		"EnglishName": "Oktoberfest",
+		"Pos": {"x":0.0227,"y":0.093 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "ottoman",
+		"EnglishName": "Ottoman",
+		"Pos": {"x":0.01574,"y":0.0527},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "harleyquinn",
+		"EnglishName": "H. Q.",
+		"Pos": {"x":-0.0458,"y":0.0257 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.138,"y":0.136 }
+	},{
+		"id": "pinkman",
+		"EnglishName": "Pinkman",
+		"Pos": {"x":-0.013,"y":0.0109 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "pennywise",
+		"EnglishName": "Dancing Clown",
+		"Pos": {"x":-0.0335,"y":-0.0234 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "rugby",
+		"EnglishName": "Rugby",
+		"Pos": {"x":0.0088,"y":-0.0205},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "sailor",
+		"EnglishName": "Sailor",
+		"Pos": {"x":0.0572,"y":0.0717 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "samurai",
+		"EnglishName": "Samurai",
+		"Pos": {"x":-0.0303,"y":-0.0244},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "darthmole",
+		"EnglishName": "Darth Mole",
+		"Pos": {"x":-0.0463,"y":-0.093},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "sikh",
+		"EnglishName": "Turban",
+		"Pos": {"x":-0.073,"y":0.217 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "spanish",
+		"EnglishName": "Flamenco",
+		"Pos": {"x":0.0017,"y":0.0352},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "jason",
+		"EnglishName": "Jasper",
+		"Pos": {"x":0,"y":-0.0146},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.13,"y":0.13 }
+	},{
+		"id": "sherlock",
+		"EnglishName": "Sherlock",
+		"Pos": {"x":0.0145,"y":0.0691},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "spikey",
+		"EnglishName": "Spikey",
+		"Pos": {"x":-0.0075,"y":-0.0374 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "vietnamese",
+		"EnglishName": "Non La",
+		"Pos": {"x":0.0229,"y":-0.0132},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "viking",
+		"EnglishName": "Viking",
+		"Pos": {"x":-0.0179,"y":-0.0201 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "paperbag",
+		"EnglishName": "Paper Bag",
+		"unlockLevel" : 1,
+		"Pos": {"x":-0.0056,"y":-0.0083},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "graduate",
+		"EnglishName": "Graduate",
+		"unlockLevel" : 2,
+		"Pos": {"x":-0.0551,"y":0.0679 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.131,"y":0.131 }
+	},{
+		"id": "beertime",
+		"EnglishName": "Beer Time",
+		"unlockLevel" : 3,
+		"Pos": {"x":0.0353,"y":-0.0201},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "masterchef",
+		"EnglishName": "Master Chef",
+		"unlockLevel" : 4,
+		"Pos": {"x":0.072,"y":0.424 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "chaplin",
+		"EnglishName": "Chaplin",
+		"unlockLevel" : 5,
+		"Pos": {"x":-0.0034,"y":0.0146},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.13,"y":0.13 }
+	},{
+		"id": "heisenberg",
+		"EnglishName": "Heisenberg",
+		"unlockLevel" : 6,
+		"Pos": {"x":-0.0122,"y":-0.0193 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "maskofthedead",
+		"EnglishName": "Mask of Dead",
+		"unlockLevel" : 7,
+		"Pos": {"x":0.0101,"y":-0.023 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.14,"y":0.14 }
+	},{
+		"id": "troll",
+		"EnglishName": "Troll",
+		"unlockLevel" : 8,
+		"Pos": {"x":-0.0307,"y":-0.0438 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "sparrow",
+		"EnglishName": "Sparrow",
+		"unlockLevel" : 9,
+		"Pos": {"x":-0.181,"y":-0.179 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "theking",
+		"EnglishName": "The King",
+		"unlockLevel" : 10,
+		"Pos": {"x":0.0203,"y":-0.0012},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "slash",
+		"EnglishName": "Clashy",
+		"unlockLevel" : 11,
+		"Pos": {"x":-0.0497,"y":-0.0367 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "hennin",
+		"EnglishName": "Ponchyc",
+		"unlockLevel" : 12,
+		"Pos": {"x":-0.201,"y":0.252 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "caesar",
+		"EnglishName": "Caesar",
+		"unlockLevel" : 13,
+		"Pos": {"x":0,"y":0.027},
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "ragnar",
+		"EnglishName": "Ragnar",
+		"unlockLevel" : 14,
+		"Pos": {"x":-0.0752,"y":-0.0702 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "emperor",
+		"EnglishName": "Emperor",
+		"unlockLevel" : 15,
+		"Pos": {"x":0.0249,"y":0.1363 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	},{
+		"id": "paimei",
+		"EnglishName": "Pai Mei",
+		"unlockLevel" : 16,
+		"Pos": {"x":-0.0465,"y":-0.1735 },
+		"RotZ": -17.5,
+		"LocalScale" : {"x":0.12,"y":0.12 }
+	}
+	]
+
+}

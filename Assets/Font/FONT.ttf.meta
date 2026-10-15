@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 36fed2c3cf128bf4fbae7824c66b5f95
+timeCreated: 1522724604
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: AA_amakara_sample
+  fontNames:
+  - AA_amakara_sample
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

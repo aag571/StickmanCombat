@@ -1,0 +1,265 @@
+
+ShadowStick.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Images/Items/axe1
+  rotate: false
+  xy: 335, 119
+  size: 148, 335
+  orig: 148, 335
+  offset: 0, 0
+  index: -1
+Images/Items/axe2
+  rotate: true
+  xy: 576, 867
+  size: 155, 348
+  orig: 155, 348
+  offset: 0, 0
+  index: -1
+Images/Items/axe3
+  rotate: true
+  xy: 576, 604
+  size: 127, 348
+  orig: 127, 348
+  offset: 0, 0
+  index: -1
+Images/Items/axe4
+  rotate: true
+  xy: 576, 456
+  size: 146, 346
+  orig: 146, 346
+  offset: 0, 0
+  index: -1
+Images/Items/axe5
+  rotate: true
+  xy: 576, 733
+  size: 132, 348
+  orig: 132, 348
+  offset: 0, 0
+  index: -1
+Images/Items/dagger1
+  rotate: false
+  xy: 518, 841
+  size: 53, 181
+  orig: 53, 181
+  offset: 0, 0
+  index: -1
+Images/Items/dagger2
+  rotate: false
+  xy: 518, 666
+  size: 53, 173
+  orig: 53, 173
+  offset: 0, 0
+  index: -1
+Images/Items/dagger3
+  rotate: true
+  xy: 335, 457
+  size: 40, 181
+  orig: 40, 181
+  offset: 0, 0
+  index: -1
+Images/Items/dagger4
+  rotate: true
+  xy: 319, 975
+  size: 47, 190
+  orig: 47, 190
+  offset: 0, 0
+  index: -1
+Images/Items/dagger5
+  rotate: false
+  xy: 837, 64
+  size: 62, 181
+  orig: 62, 181
+  offset: 0, 0
+  index: -1
+Images/Items/fist1
+  rotate: true
+  xy: 319, 499
+  size: 103, 197
+  orig: 103, 197
+  offset: 0, 0
+  index: -1
+Images/Items/fist2
+  rotate: false
+  xy: 926, 858
+  size: 96, 164
+  orig: 96, 164
+  offset: 0, 0
+  index: -1
+Images/Items/fist3
+  rotate: true
+  xy: 2, 2
+  size: 83, 199
+  orig: 83, 199
+  offset: 0, 0
+  index: -1
+Images/Items/fist4
+  rotate: false
+  xy: 924, 346
+  size: 98, 182
+  orig: 98, 182
+  offset: 0, 0
+  index: -1
+Images/Items/fist5
+  rotate: false
+  xy: 485, 210
+  size: 85, 245
+  orig: 85, 245
+  offset: 0, 0
+  index: -1
+Images/Items/goku
+  rotate: false
+  xy: 648, 247
+  size: 261, 207
+  orig: 261, 207
+  offset: 0, 0
+  index: -1
+Images/Items/gun1
+  rotate: true
+  xy: 441, 691
+  size: 150, 68
+  orig: 150, 68
+  offset: 0, 0
+  index: -1
+Images/Items/samurai
+  rotate: false
+  xy: 648, 47
+  size: 187, 198
+  orig: 187, 198
+  offset: 0, 0
+  index: -1
+Images/Items/spear1
+  rotate: false
+  xy: 53, 499
+  size: 87, 523
+  orig: 87, 523
+  offset: 0, 0
+  index: -1
+Images/Items/spear2
+  rotate: false
+  xy: 2, 498
+  size: 49, 524
+  orig: 49, 524
+  offset: 0, 0
+  index: -1
+Images/Items/spear3
+  rotate: false
+  xy: 142, 499
+  size: 82, 523
+  orig: 82, 523
+  offset: 0, 0
+  index: -1
+Images/Items/spear4
+  rotate: false
+  xy: 226, 499
+  size: 47, 523
+  orig: 47, 523
+  offset: 0, 0
+  index: -1
+Images/Items/spear5
+  rotate: false
+  xy: 275, 499
+  size: 42, 523
+  orig: 42, 523
+  offset: 0, 0
+  index: -1
+Images/Items/sword1h1
+  rotate: false
+  xy: 319, 674
+  size: 58, 299
+  orig: 58, 299
+  offset: 0, 0
+  index: -1
+Images/Items/sword1h2
+  rotate: false
+  xy: 982, 45
+  size: 35, 299
+  orig: 35, 299
+  offset: 0, 0
+  index: -1
+Images/Items/sword1h3
+  rotate: false
+  xy: 911, 50
+  size: 69, 294
+  orig: 69, 294
+  offset: 0, 0
+  index: -1
+Images/Items/sword1h4
+  rotate: false
+  xy: 572, 128
+  size: 74, 326
+  orig: 74, 326
+  offset: 0, 0
+  index: -1
+Images/Items/sword1h5
+  rotate: false
+  xy: 926, 530
+  size: 91, 326
+  orig: 91, 326
+  offset: 0, 0
+  index: -1
+Images/Items/sword2h1
+  rotate: false
+  xy: 2, 87
+  size: 26, 409
+  orig: 26, 409
+  offset: 0, 0
+  index: -1
+Images/Items/sword2h2
+  rotate: false
+  xy: 126, 113
+  size: 109, 384
+  orig: 109, 384
+  offset: 0, 0
+  index: -1
+Images/Items/sword2h3
+  rotate: false
+  xy: 237, 115
+  size: 96, 382
+  orig: 96, 382
+  offset: 0, 0
+  index: -1
+Images/Items/sword2h4
+  rotate: true
+  xy: 203, 6
+  size: 105, 371
+  orig: 105, 371
+  offset: 0, 0
+  index: -1
+Images/Items/sword2h5
+  rotate: false
+  xy: 30, 92
+  size: 94, 404
+  orig: 94, 404
+  offset: 0, 0
+  index: -1
+Images/circle
+  rotate: false
+  xy: 379, 843
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+Images/foot
+  rotate: false
+  xy: 485, 118
+  size: 60, 90
+  orig: 60, 90
+  offset: 0, 0
+  index: -1
+Images/long
+  rotate: true
+  xy: 319, 604
+  size: 60, 180
+  orig: 60, 180
+  offset: 0, 0
+  index: -1
+Images/short
+  rotate: false
+  xy: 379, 673
+  size: 60, 168
+  orig: 60, 168
+  offset: 0, 0
+  index: -1

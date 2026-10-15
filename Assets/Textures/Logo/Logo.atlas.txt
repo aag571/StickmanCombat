@@ -1,0 +1,27 @@
+
+Logo.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 1
+  rotate: false
+  xy: 2, 16
+  size: 757, 185
+  orig: 758, 186
+  offset: 0, 1
+  index: -1
+stickman
+  rotate: false
+  xy: 761, 88
+  size: 560, 113
+  orig: 560, 114
+  offset: 0, 0
+  index: -1
+z
+  rotate: false
+  xy: 1323, 2
+  size: 207, 199
+  orig: 207, 199
+  offset: 0, 0
+  index: -1

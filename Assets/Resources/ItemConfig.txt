@@ -1,0 +1,491 @@
+﻿{
+	"weaponCategories": [{
+			"id": "Fist",
+			"reach": 0.2,
+			"twoHanded": false,
+			"dualWield": true,
+			"hitVectors": [{
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 25,
+				"y": 5
+			}, {
+				"x": 8,
+				"y": 35
+			}],
+			"weapons": [{
+				"EnglishName": "Unarmed",
+				"ChineseName": "赤手空拳"
+			}, {
+				"EnglishName": "Skull Smasher",
+				"ChineseName": "头颅粉碎者"
+			}, {
+				"EnglishName": "Caws of Dead'ric",
+				"ChineseName": "达里克的尖叫"
+			}, {
+				"EnglishName": "Hatesuwo",
+				"ChineseName": "哈特苏沃"
+			}, {
+				"EnglishName": "Neroshinemu",
+				"ChineseName": "尼禄仙慕"
+			}, {
+				"EnglishName": "Onepunch Fists",
+				"ChineseName": "一拳之拳"
+			}, {
+				"EnglishName": "Iron Gloves",
+				"ChineseName": "铁手套"
+			}, {
+				"EnglishName": "Metal Fists",
+				"ChineseName": "合金拳头"
+			}]
+		},
+
+		{
+			"id": "Dagger",
+			"reach": 0.3,
+			"twoHanded": false,
+			"dualWield": true,
+			"hitVectors": [{
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 25,
+				"y": 5
+			}, {
+				"x": 25,
+				"y": 5
+			}, {
+				"x": 8,
+				"y": 35
+			}],
+			"weapons": [{
+				"EnglishName": "Balgruuf",
+				"ChineseName": "巴尔古夫"
+			}, {
+				"EnglishName": "Blessed Iron Dagger",
+				"ChineseName": "祝福铁匕"
+			}, {
+				"EnglishName": "Bloodscythe",
+				"ChineseName": "血镰刀"
+			}, {
+				"EnglishName": "Bloodthorn",
+				"ChineseName": "血刺"
+			}, {
+				"EnglishName": "Dagger of Sacrifice",
+				"ChineseName": "牺牲匕首"
+			}, {
+				"EnglishName": "Pencil",
+				"ChineseName": "铅笔"
+			}, {
+				"EnglishName": "Ceremonial Dagger",
+				"ChineseName": "礼仪匕首"
+			}, {
+				"EnglishName": "Alessandra",
+				"ChineseName": "亚历山德拉"
+			}]
+		},
+		{
+			"id": "Axe",
+			"reach": 0.8,
+			"twoHanded": true,
+			"dualWield": false,
+			"hitVectors": [{
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 8,
+				"y": 35
+			}, {
+				"x": 5,
+				"y": -20
+			}],
+			"weapons": [{
+				"EnglishName": "Nord War Axe",
+				"ChineseName": "诺德战斧"
+			}, {
+				"EnglishName": "Daed'ric Axe of Storms",
+				"ChineseName": "风暴达里克斧"
+			}, {
+				"EnglishName": "Guillotine",
+				"ChineseName": "断头台"
+			}, {
+				"EnglishName": "The Mangler",
+				"ChineseName": "绞肉机"
+			}, {
+				"EnglishName": "Stone Cleaver",
+				"ChineseName": "石头砍刀"
+			}, {
+				"EnglishName": "The Butcher's Cleaver",
+				"ChineseName": "屠夫的剁肉刀"
+			}, {
+				"EnglishName": "Ragnarok",
+				"ChineseName": "世界毁灭"
+			}, {
+				"EnglishName": "Messerschmidt's Reaver",
+				"ChineseName": "梅塞斯密特的掠夺"
+			}, {
+				"EnglishName": "Sharp Beak",
+				"ChineseName": "锐利鸟嘴"
+			}]
+		},
+		{
+			"id": "Spear",
+			"reach": 0.8,
+			"twoHanded": true,
+			"dualWield": false,
+			"hitVectors": [{
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 8,
+				"y": 35
+			}],
+			"weapons": [{
+				"EnglishName": "Hyperion Spear",
+				"ChineseName": "亥伯龙之矛"
+			}, {
+				"EnglishName": "Mancatcher",
+				"ChineseName": "刺人枪"
+			}, {
+				"EnglishName": "Peace Keeper",
+				"ChineseName": "和平守护者"
+			}, {
+				"EnglishName": "Viperfork",
+				"ChineseName": "蝰蛇叉"
+			}, {
+				"EnglishName": "Kelpie Snare",
+				"ChineseName": "水魔陷阱"
+			}, {
+				"EnglishName": "Phoenix",
+				"ChineseName": "凤凰"
+			}, {
+				"EnglishName": "Mic",
+				"ChineseName": "麦克风"
+			}]
+		},
+		{
+			"id": "Sword1h",
+			"reach": 0.5,
+			"twoHanded": true,
+			"dualWield": false,
+			"hitVectors": [{
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 8,
+				"y": 35
+			}],
+			"weapons": [{
+				"EnglishName": "The Atlantean",
+				"ChineseName": "亚特拉斯"
+			}, {
+				"EnglishName": "Cloudcrack",
+				"ChineseName": "云裂"
+			}, {
+				"EnglishName": "Azurewrath",
+				"ChineseName": "碧蓝怒火"
+			}, {
+				"EnglishName": "Todesfaelle Flamme",
+				"ChineseName": "特迪斯法雷"
+			}, {
+				"EnglishName": "God Butcher",
+				"ChineseName": "弑神者"
+			}, {
+				"EnglishName": "Fulminator",
+				"ChineseName": "怒雷"
+			}, {
+				"EnglishName": "Skycutter",
+				"ChineseName": "断空"
+			}, {
+				"EnglishName": "Crainte Vomir",
+				"ChineseName": "克林铁弗姆"
+			}]
+		},
+		{
+			"id": "Sword2h",
+			"reach": 0.8,
+			"twoHanded": true,
+			"dualWield": false,
+			"hitVectors": [{
+				"x": 20,
+				"y": 10
+			}, {
+				"x": 5,
+				"y": -20
+			}, {
+				"x": 8,
+				"y": 35
+			}, {
+				"x": 5,
+				"y": -20
+			}],
+			"weapons": [{
+				"EnglishName": "Quinquennial Sword",
+				"ChineseName": "五年之剑"
+			}, {
+				"EnglishName": "Resplendent Ancient",
+				"ChineseName": "壮丽远古剑"
+			}, {
+				"EnglishName": "Grand Master Gladius",
+				"ChineseName": "宗师短剑"
+			}, {
+				"EnglishName": "Griswold's Perfection",
+				"ChineseName": "格里斯沃尔德的完美杰作"
+			}, {
+				"EnglishName": "Sovereign Tsunami Blade",
+				"ChineseName": "君王海啸之刃"
+			}, {
+				"EnglishName": "Born's Furious Wrath",
+				"ChineseName": "博恩的暴怒"
+			}, {
+				"EnglishName": "Deathwish",
+				"ChineseName": "绝命"
+			}, {
+				"EnglishName": "Hanzo Spectrum",
+				"ChineseName": "半藏虹光"
+			}]
+		}
+	],
+	"hats": [{
+		"id": "hat0",
+		"EnglishName": "Bald",
+		"ChineseName": "光头"
+	},{
+		"id": "wolf",
+		"EnglishName": "Wolf Man",
+		"ChineseName": "狼人"
+	}
+	,{
+		"id": "thor",
+		"EnglishName": "Thunder God",
+		"ChineseName": "雷神"
+	}
+	,{
+		"id": "ironman",
+		"EnglishName": "Iron Robot",
+		"ChineseName": "钢铁侠"
+	}
+	,{
+		"id": "blackpanther",
+		"EnglishName": "Demon Panther",
+		"ChineseName": "恶魔猎手"
+	}
+	,{
+		"id": "americangothic",
+		"EnglishName": "American Gothic",
+		"ChineseName": "美式哥特"
+	},{
+		"id": "artist",
+		"EnglishName": "L'Artiste",
+		"ChineseName": "艺术家"
+	},{
+		"id": "mrofficer",
+		"EnglishName": "Mr. Officer",
+		"ChineseName": "长官先生"
+	},{
+		"id": "maleficent",
+		"EnglishName": "Witch",
+		"ChineseName": "女巫"
+	},{
+		"id": "chief",
+		"EnglishName": "The Chief",
+		"ChineseName": "酋长"
+	},{
+		"id": "chinese",
+		"EnglishName": "Qing Guanmao",
+		"ChineseName": "清官帽"
+	},{
+		"id": "drogon",
+		"EnglishName": "Drogon",
+		"ChineseName": "龙"
+	},{
+		"id": "dumbo",
+		"EnglishName": "Dumbo",
+		"ChineseName": "飞象"
+	},{
+		"id": "alex",
+		"EnglishName": "Alex",
+		"ChineseName": "亚历克斯"
+	},{
+		"id": "fullmetaljacket",
+		"EnglishName": "Full Metal Jacket",
+		"ChineseName": "金甲部队"
+	},{
+		"id": "gandalf",
+		"EnglishName": "Gandalf",
+		"ChineseName": "甘道夫"
+	},{
+		"id": "gasmask",
+		"EnglishName": "Gas Mask",
+		"ChineseName": "防毒面具"
+	},{
+		"id": "goku",
+		"EnglishName": "Kamehameha!",
+		"ChineseName": "龟派气功！"
+	},{
+		"id": "walterwhite",
+		"EnglishName": "Mr. White",
+		"ChineseName": "怀特先生"
+	},{
+		"id": "robbywood",
+		"EnglishName": "Robby Wood",
+		"ChineseName": "罗宾汉"
+	},{
+		"id": "kendo",
+		"EnglishName": "Kendo",
+		"ChineseName": "剑道"
+	},{
+		"id": "catwoman",
+		"EnglishName": "Cat Woman",
+		"ChineseName": "猫女"
+	},{
+		"id": "korean",
+		"EnglishName": "Gat",
+		"ChineseName": "墨笠"
+	},{
+		"id": "lacucaracha",
+		"EnglishName": "Sombrero",
+		"ChineseName": "宽边帽"
+	},{
+		"id": "machinist",
+		"EnglishName": "Machinist",
+		"ChineseName": "机械师"
+	},{
+		"id": "naruto",
+		"EnglishName": "Naruto",
+		"ChineseName": "火影忍者"
+	},{
+		"id": "ninja",
+		"EnglishName": "Taliban",
+		"ChineseName": "塔利班"
+	},{
+		"id": "oktoberfest",
+		"EnglishName": "Oktoberfest",
+		"ChineseName": "啤酒节"
+	},{
+		"id": "ottoman",
+		"EnglishName": "Ottoman",
+		"ChineseName": "土耳其人"
+	},{
+		"id": "harleyquinn",
+		"EnglishName": "H. Q.",
+		"ChineseName": "小丑"
+	},{
+		"id": "pinkman",
+		"EnglishName": "Pinkman",
+		"ChineseName": "平克曼"
+	},{
+		"id": "pennywise",
+		"EnglishName": "Dancing Clown",
+		"ChineseName": "舞蹈小丑"
+	},{
+		"id": "rugby",
+		"EnglishName": "Rugby",
+		"ChineseName": "橄榄球"
+	},{
+		"id": "sailor",
+		"EnglishName": "Sailor",
+		"ChineseName": "水手"
+	},{
+		"id": "samurai",
+		"EnglishName": "Samurai",
+		"ChineseName": "日本武士"
+	},{
+		"id": "spanish",
+		"EnglishName": "Flamenco",
+		"ChineseName": "弗拉明科舞"
+	},{
+		"id": "jason",
+		"EnglishName": "Jasper",
+		"ChineseName": "贾斯珀"
+	},{
+		"id": "sherlock",
+		"EnglishName": "Sherlock",
+		"ChineseName": "夏洛克"
+	},{
+		"id": "spikey",
+		"EnglishName": "Spikey",
+		"ChineseName": "尖刺头盔"
+	},{
+		"id": "vietnamese",
+		"EnglishName": "Non La",
+		"ChineseName": "斗笠"
+	},{
+		"id": "viking",
+		"EnglishName": "Viking",
+		"ChineseName": "维京人"
+	},{
+		"id": "paperbag",
+		"EnglishName": "Paper Bag",
+		"ChineseName": "纸袋"
+	},{
+		"id": "graduate",
+		"EnglishName": "Graduate",
+		"ChineseName": "学士"
+	},{
+		"id": "beertime",
+		"EnglishName": "Beer Time",
+		"ChineseName": "啤酒时间"
+	},{
+		"id": "chaplin",
+		"EnglishName": "Chaplin",
+		"ChineseName": "卓别林"
+	},{
+		"id": "heisenberg",
+		"EnglishName": "Heisenberg",
+		"ChineseName": "海森伯格"
+	},{
+		"id": "maskofthedead",
+		"EnglishName": "Mask of Dead",
+		"ChineseName": "死亡面具"
+	},{
+		"id": "troll",
+		"EnglishName": "Troll",
+		"ChineseName": "巨魔"
+	},{
+		"id": "theking",
+		"EnglishName": "The King",
+		"ChineseName": "国王"
+	},{
+		"id": "slash",
+		"EnglishName": "Clashy",
+		"ChineseName": "索尔·哈德森"
+	},{
+		"id": "caesar",
+		"EnglishName": "Caesar",
+		"ChineseName": "凯撒"
+	},{
+		"id": "ragnar",
+		"EnglishName": "Ragnar",
+		"ChineseName": "拉格纳"
+	},{
+		"id": "emperor",
+		"EnglishName": "Emperor",
+		"ChineseName": "皇帝"
+	},{
+		"id": "paimei",
+		"EnglishName": "Pai Mei",
+		"ChineseName": "白眉道长"
+	}
+	]
+
+}
