@@ -264,6 +264,7 @@ public class Npc : MonoBehaviour
 	public void Activate()
 	{
 		base.gameObject.SetActive(true);
+		this.UnMarkForKill();
 		if (this.hitSides.Count < 2)
 		{
 			this.hatSprite.color = Color.black;

@@ -82,6 +82,8 @@ namespace StickmanCombat.Gameplay
             scaler.matchWidthOrHeight = Screen.width < Screen.height ? 0f : 1f;
             mobileControls.SetActive(!controller.IsMainMenu && CombatInputPlatform.UsesTouchControls
                 && controller.Session != null && controller.Session.State == SessionState.Playing && !settings.activeSelf);
+            if (controller.Session != null && controller.Session.State == SessionState.Playing)
+                UpdateHud(controller.Session, controller.Repository.Profile.rank.DisplayName);
         }
         private MenuToggle[] GetToggles() => new[] { AudioManager.instance.musicToggle, AudioManager.instance.soundToggle, NpcManager.instance.bloodToggler, FindObjectOfType<EnvironmentManager>().weatherToggler };
         private void RefreshEquipped() { equipped.text = "当前武器：" + ItemManager.instance.currentWeapon.GetName(); }
@@ -95,7 +97,9 @@ namespace StickmanCombat.Gameplay
         public void ShowGame() { main.SetActive(false); equipped.gameObject.SetActive(false); }
         public void UpdateHud(GameSession session, string rank)
         {
-            hud.text = session.Mode == GameMode.Ranked ? rank + "\n" + session.Rules.GetObjective(session.Kills, session.Score) : session.Rules.GetObjective(session.Kills, session.Score);
+            string objective = session.Mode == GameMode.Ranked ? rank + "\n" + session.Rules.GetObjective(session.Kills, session.Score) : session.Rules.GetObjective(session.Kills, session.Score);
+            float cooldown = controller.DodgeCooldownRemaining;
+            hud.text = objective + (cooldown > 0.05f ? "\n闪避冷却 " + Mathf.CeilToInt(cooldown) + " 秒" : "\n闪避就绪");
         }
         public void ShowResult(GameSession session, string rank)
         {
