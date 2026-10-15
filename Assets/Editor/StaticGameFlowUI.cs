@@ -86,6 +86,7 @@ public sealed class StaticGameFlowUI
         view.soundVolume=Volume(view.settings.transform,new Vector2(75,-195),"SoundVolume",out view.soundPercent);
         view.settingsClose=Button(view.settings.transform,"关闭 / 继续",new Vector2(.5f,0),new Vector2(-125,65),new Vector2(220,58),null,"CloseSettingsButton");
         view.settingsExit=Button(view.settings.transform,"退出本局",new Vector2(.5f,0),new Vector2(125,65),new Vector2(220,58),null,"ExitGameButton");
+        view.orientationButton=Button(view.settings.transform,"屏幕方向：横屏",new Vector2(.5f,1),new Vector2(0,-405),new Vector2(380,56),null,"OrientationButton");
         view.equipment=Panel("Equipment",new Vector2(1000,620));
         Label(view.equipment.transform,"武器装备",new Vector2(.5f,1),new Vector2(0,-40),new Vector2(850,60),34);
         view.equipmentClose=Button(view.equipment.transform,"关闭",new Vector2(1,1),new Vector2(-65,-40),new Vector2(100,48),null,"CloseEquipmentButton");

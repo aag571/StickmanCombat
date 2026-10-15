@@ -16058,6 +16058,7 @@ MonoBehaviour:
   equipmentClose: {fileID: 7938261221694256351}
   settingsClose: {fileID: 8294026350799587497}
   settingsExit: {fileID: 7522691197038892605}
+  orientationButton: {fileID: 0}
   replayButton: {fileID: 3066151548809756766}
   menuButton: {fileID: 7848180584274765142}
   unlockClose: {fileID: 3541963787495730200}
