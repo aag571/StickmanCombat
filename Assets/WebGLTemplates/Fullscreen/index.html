@@ -13,6 +13,8 @@
     #canvas { display: block; width: 100%; height: 100%; touch-action: none; }
     #loading { position: absolute; inset: 0; display: grid; place-content: center; gap: 16px; color: white; text-align: center; background: #101018; }
     progress { width: min(70vw, 320px); }
+    #loadingHint { color: #b9becb; font-size: 14px; }
+    #retry { display: none; justify-self: center; padding: 8px 22px; border: 1px solid #ffffff60; border-radius: 6px; color: white; background: #0009; cursor: pointer; }
     #fullscreen { position: absolute; top: max(12px, env(safe-area-inset-top)); right: max(12px, env(safe-area-inset-right)); padding: 8px 14px; border: 1px solid #ffffff60; border-radius: 6px; color: white; background: #0009; cursor: pointer; }
     #error { max-width: 80vw; white-space: pre-wrap; }
   </style>
@@ -29,6 +31,16 @@
     const fullscreen = document.getElementById('fullscreen');
     const loading = document.getElementById('loading');
     const error = document.getElementById('error');
+    const loadingHint = document.createElement('span');
+    loadingHint.id = 'loadingHint';
+    loadingHint.textContent = '首次加载可能会慢一点，资源会缓存到本机';
+    loading.appendChild(loadingHint);
+    const retry = document.createElement('button');
+    retry.id = 'retry';
+    retry.type = 'button';
+    retry.textContent = '重新加载';
+    retry.addEventListener('click', () => window.location.reload());
+    loading.appendChild(retry);
     const buildUrl = 'Build';
     const config = {
       dataUrl: buildUrl + '/{{{ DATA_FILENAME }}}',
@@ -53,6 +65,9 @@
     };
     let gameInstance;
     function showError(message) {
+      loading.style.display = 'grid';
+      loadingHint.textContent = '请检查网络后点击“重新加载”，已下载资源会继续使用缓存';
+      retry.style.display = 'block';
       error.textContent = '游戏加载失败，请刷新重试。\n' + message;
       document.getElementById('progress').hidden = true;
     }
@@ -62,11 +77,13 @@
     loader.onload = () => {
       createUnityInstance(canvas, config, progress => {
         document.getElementById('progress').value = progress;
+        loadingHint.textContent = progress < 0.8 ? '首次加载可能会慢一点，正在下载资源…' : '正在初始化游戏…';
       }).then(instance => {
         gameInstance = instance;
         loading.style.display = 'none';
         fullscreen.disabled = false;
         canvas.focus();
+        localStorage.setItem('StickmanCombatLoaded', '1');
       }).catch(showError);
     };
     document.body.appendChild(loader);

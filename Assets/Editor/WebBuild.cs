@@ -20,6 +20,7 @@ public static class WebBuild
         PlayerSettings.WebGL.dataCaching = true;
         PlayerSettings.SplashScreen.show = false;
         PlayerSettings.SplashScreen.showUnityLogo = false;
+        PlayerSettings.SplashScreen.logoStyle = UnityEditor.Rendering.SplashScreenLogoStyle.DarkOnLight;
         var scenes = EditorBuildSettings.scenes.Where(scene => scene.enabled).Select(scene => scene.path).ToArray();
         var report = BuildPipeline.BuildPlayer(scenes, "Builds/WebGL", BuildTarget.WebGL, BuildOptions.None);
         if (report.summary.result != BuildResult.Succeeded)

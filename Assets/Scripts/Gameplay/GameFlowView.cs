@@ -64,8 +64,11 @@ namespace StickmanCombat.Gameplay
             }
             musicVolume.onValueChanged.AddListener(value => { AudioManager.instance.SetMusicVolume(value); musicPercent.text = Mathf.RoundToInt(value * 100) + "%"; });
             soundVolume.onValueChanged.AddListener(value => { AudioManager.instance.SetSoundVolume(value); soundPercent.text = Mathf.RoundToInt(value * 100) + "%"; });
-            orientationButton.onClick.AddListener(ToggleOrientation);
-            orientationButton.gameObject.SetActive(Application.isMobilePlatform);
+            if (orientationButton != null)
+            {
+                orientationButton.onClick.AddListener(ToggleOrientation);
+                orientationButton.gameObject.SetActive(Application.isMobilePlatform);
+            }
             settingsButton.GetComponent<RectTransform>().anchorMin = settingsButton.GetComponent<RectTransform>().anchorMax = new Vector2(1, flow.IsMainMenu ? 0 : 1);
             settingsButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(-90, flow.IsMainMenu ? 48 : -42);
             main.SetActive(false);
@@ -130,7 +133,8 @@ namespace StickmanCombat.Gameplay
             musicVolume.SetValueWithoutNotify(AudioManager.instance.MusicVolume);
             soundVolume.SetValueWithoutNotify(AudioManager.instance.SoundVolume);
             musicPercent.text = Mathf.RoundToInt(musicVolume.value * 100) + "%";
-            orientationButton.GetComponentInChildren<Text>().text = "屏幕方向：" + (PlayerPrefs.GetInt("MobilePortrait", 0) == 1 ? "竖屏" : "横屏");
+            if (orientationButton != null)
+                orientationButton.GetComponentInChildren<Text>().text = "屏幕方向：" + (PlayerPrefs.GetInt("MobilePortrait", 0) == 1 ? "竖屏" : "横屏");
             soundPercent.text = Mathf.RoundToInt(soundVolume.value * 100) + "%";
         }
         public void ShowSettings()
