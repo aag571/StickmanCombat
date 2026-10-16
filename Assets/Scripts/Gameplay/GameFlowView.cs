@@ -114,8 +114,12 @@ namespace StickmanCombat.Gameplay
         public void UpdateHud(GameSession session, string rank)
         {
             string objective = session.Mode == GameMode.Ranked ? rank + "\n" + session.Rules.GetObjective(session.Kills, session.Score) : session.Rules.GetObjective(session.Kills, session.Score);
-            float cooldown = controller.DodgeCooldownRemaining;
-            hud.text = objective + (cooldown > 0.05f ? "\n闪避冷却 " + Mathf.CeilToInt(cooldown) + " 秒" : "\n闪避就绪");
+            if (WeaponCombatProfile.For(ItemManager.instance.currentWeapon).effect == WeaponEffect.Dodge)
+            {
+                float cooldown = controller.DodgeCooldownRemaining;
+                objective += cooldown > 0.05f ? "\n闪避冷却 " + Mathf.CeilToInt(cooldown) + " 秒" : "\n闪避就绪";
+            }
+            hud.text = objective;
         }
         public void ShowResult(GameSession session, string rank)
         {
