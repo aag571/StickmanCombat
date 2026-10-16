@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -22,9 +22,9 @@
 <body>
   <div id="game">
     <canvas id="canvas" tabindex="0"></canvas>
-    <div id="orientation">建议横屏游玩 · 左右下角按钮操作</div>
-    <div id="loading"><span>正在加载游戏…</span><progress id="progress" max="1" value="0"></progress><div id="error" role="alert"></div></div>
-    <button id="fullscreen" type="button" disabled>全屏</button>
+    <div id="orientation">寤鸿妯睆娓哥帺 路 宸﹀彸涓嬭鎸夐挳鎿嶄綔</div>
+    <div id="loading"><span>姝ｅ湪鍔犺浇娓告垙鈥?/span><progress id="progress" max="1" value="0"></progress><div id="error" role="alert"></div></div>
+    <button id="fullscreen" type="button" disabled>鍏ㄥ睆</button>
   </div>
   <script>
     const canvas = document.getElementById('canvas');
@@ -33,19 +33,34 @@
     const error = document.getElementById('error');
     const loadingHint = document.createElement('span');
     loadingHint.id = 'loadingHint';
-    loadingHint.textContent = '首次加载可能会慢一点，资源会缓存到本机';
+    loadingHint.textContent = '棣栨鍔犺浇鍙兘浼氭參涓€鐐癸紝璧勬簮浼氱紦瀛樺埌鏈満';
     loading.appendChild(loadingHint);
     const retry = document.createElement('button');
     retry.id = 'retry';
     retry.type = 'button';
-    retry.textContent = '重新加载';
+    retry.textContent = '閲嶆柊鍔犺浇';
     retry.addEventListener('click', () => window.location.reload());
     loading.appendChild(retry);
     const buildUrl = 'Build';
-    const config = {
-      dataUrl: buildUrl + '/WebGL.data.unityweb',
-      frameworkUrl: buildUrl + '/WebGL.framework.js.unityweb',
-      codeUrl: buildUrl + '/WebGL.wasm.unityweb',
+    let gameInstance;
+    async function loadVersion() {
+      try {
+        const response = await fetch('version.json?check=' + Date.now(), { cache: 'no-store' });
+        if (!response.ok) throw new Error('version.json returned ' + response.status);
+        const manifest = await response.json();
+        return manifest && manifest.version ? String(manifest.version) : '';
+      } catch (error) {
+        loadingHint.textContent = 'Version check unavailable; continuing with cached resources.';
+        return localStorage.getItem('StickmanCombatVersion') || '';
+      }
+    }
+    async function startGame() {
+      const remoteVersion = await loadVersion();
+      const versionQuery = remoteVersion ? '?v=' + encodeURIComponent(remoteVersion) : '';
+      const config = {
+      dataUrl: buildUrl + '/WebGL.data.unityweb' + versionQuery,
+      frameworkUrl: buildUrl + '/WebGL.framework.js.unityweb' + versionQuery,
+      codeUrl: buildUrl + '/WebGL.wasm.unityweb' + versionQuery,
       streamingAssetsUrl: 'StreamingAssets',
       companyName: "Atlansoft",
       productName: "Shadow Hustle - Stickman Battle",
@@ -57,30 +72,33 @@
         else { console.warn(message); }
       }
     };
-    let gameInstance;
+    
     function showError(message) {
       loading.style.display = 'grid';
-      loadingHint.textContent = '请检查网络后点击“重新加载”，已下载资源会继续使用缓存';
+      loadingHint.textContent = 'Check your network, then retry. Cached resources will be reused.';
       retry.style.display = 'block';
-      error.textContent = '游戏加载失败，请刷新重试。\n' + message;
+      error.textContent = 'Game loading failed. Please retry.\\n' + message;
       document.getElementById('progress').hidden = true;
     }
     const loader = document.createElement('script');
-    loader.src = buildUrl + '/WebGL.loader.js';
-    loader.onerror = () => showError('无法下载游戏加载器。');
+    loader.src = buildUrl + '/WebGL.loader.js' + versionQuery;
+    loader.onerror = () => showError('Unable to download the Unity loader.');
     loader.onload = () => {
       createUnityInstance(canvas, config, progress => {
         document.getElementById('progress').value = progress;
-        loadingHint.textContent = progress < 0.8 ? '首次加载可能会慢一点，正在下载资源…' : '正在初始化游戏…';
+        loadingHint.textContent = progress < 0.8 ? 'First load may take longer; resources are cached locally.' : 'Initializing game...';
       }).then(instance => {
         gameInstance = instance;
         loading.style.display = 'none';
         fullscreen.disabled = false;
         canvas.focus();
         localStorage.setItem('StickmanCombatLoaded', '1');
+        if (remoteVersion) localStorage.setItem('StickmanCombatVersion', remoteVersion);
       }).catch(showError);
     };
     document.body.appendChild(loader);
+    }
+    startGame().catch(showError);
     fullscreen.addEventListener('click', () => {
       if (!gameInstance) return;
       const request = document.getElementById('game').requestFullscreen;
@@ -100,3 +118,4 @@
   </script>
 </body>
 </html>
+
