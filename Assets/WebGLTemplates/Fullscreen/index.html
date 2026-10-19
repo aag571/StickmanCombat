@@ -104,7 +104,11 @@
     };
     document.body.appendChild(loader);
     }
-    startGame().catch(showError);
+    startGame().catch(message => {
+      loading.style.display = 'grid';
+      error.textContent = String(message);
+      retry.style.display = 'block';
+    });
     fullscreen.addEventListener('click', () => {
       if (!gameInstance) return;
       const request = document.getElementById('game').requestFullscreen;
