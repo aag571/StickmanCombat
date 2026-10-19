@@ -22,9 +22,9 @@
 <body>
   <div id="game">
     <canvas id="canvas" tabindex="0"></canvas>
-    <div id="orientation">寤鸿妯睆娓哥帺 路 宸﹀彸涓嬭鎸夐挳鎿嶄綔</div>
-    <div id="loading"><span>姝ｅ湪鍔犺浇娓告垙鈥?/span><progress id="progress" max="1" value="0"></progress><div id="error" role="alert"></div></div>
-    <button id="fullscreen" type="button" disabled>鍏ㄥ睆</button>
+    <div id="orientation">建议横屏游玩 · 左右下角按钮操作</div>
+    <div id="loading"><span>正在加载游戏……</span><progress id="progress" max="1" value="0"></progress><div id="error" role="alert"></div></div>
+    <button id="fullscreen" type="button" disabled>全屏</button>
   </div>
   <script>
     const canvas = document.getElementById('canvas');
@@ -33,12 +33,12 @@
     const error = document.getElementById('error');
     const loadingHint = document.createElement('span');
     loadingHint.id = 'loadingHint';
-    loadingHint.textContent = '棣栨鍔犺浇鍙兘浼氭參涓€鐐癸紝璧勬簮浼氱紦瀛樺埌鏈満';
+    loadingHint.textContent = '首次加载可能会慢一点，资源会缓存到本机';
     loading.appendChild(loadingHint);
     const retry = document.createElement('button');
     retry.id = 'retry';
     retry.type = 'button';
-    retry.textContent = '閲嶆柊鍔犺浇';
+    retry.textContent = '重新加载';
     retry.addEventListener('click', () => window.location.reload());
     loading.appendChild(retry);
     const buildUrl = 'Build';
@@ -50,7 +50,7 @@
         const manifest = await response.json();
         return manifest && manifest.version ? String(manifest.version) : '';
       } catch (error) {
-        loadingHint.textContent = 'Version check unavailable; continuing with cached resources.';
+        loadingHint.textContent = '暂时无法检查版本，继续使用本地缓存';
         return localStorage.getItem('StickmanCombatVersion') || '';
       }
     }
@@ -75,18 +75,18 @@
     
     function showError(message) {
       loading.style.display = 'grid';
-      loadingHint.textContent = 'Check your network, then retry. Cached resources will be reused.';
+      loadingHint.textContent = '请检查网络后点击“重新加载”，已下载资源会继续使用缓存';
       retry.style.display = 'block';
-      error.textContent = 'Game loading failed. Please retry.\\n' + message;
+      error.textContent = '游戏加载失败，请重试。\n' + message;
       document.getElementById('progress').hidden = true;
     }
     const loader = document.createElement('script');
     loader.src = buildUrl + '/WebGL.loader.js' + versionQuery;
-    loader.onerror = () => showError('Unable to download the Unity loader.');
+    loader.onerror = () => showError('无法下载游戏加载器。');
     loader.onload = () => {
       createUnityInstance(canvas, config, progress => {
         document.getElementById('progress').value = progress;
-        loadingHint.textContent = progress < 0.8 ? 'First load may take longer; resources are cached locally.' : 'Initializing game...';
+        loadingHint.textContent = progress < 0.8 ? '首次加载可能会慢一点，正在下载资源……' : '正在初始化游戏……';
       }).then(instance => {
         gameInstance = instance;
         loading.style.display = 'none';
